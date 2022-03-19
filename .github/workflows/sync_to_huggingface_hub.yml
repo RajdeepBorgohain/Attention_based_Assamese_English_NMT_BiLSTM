@@ -16,4 +16,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://rbgo:$HF_TOKEN@huggingface.co/spaces/rbgo/Attention_based_Assamese_English_NMT_BiLSTM main
+        run: git push --force https://rbgo:$HF_TOKEN@huggingface.co/spaces/rbgo/Attention_based_Assamese_English_NMT_BiLSTM main
